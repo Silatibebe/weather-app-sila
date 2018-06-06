@@ -8,7 +8,7 @@ a:{
    alias: 'address',
    describe: 'Address to fetch weather for',
    string: true,
-   default:'98008'//default value for argv.a
+   default:'some default address'//default value for argv.a
 }
 }).help()
 .alias('help','h')
@@ -65,7 +65,7 @@ axios.get(googleMapsUrl)
 /*
 THINGS TO ADD TO Z APP
 ---------------------
-1.time(hour,min,am or pm) of the location in local time and date info(including year,date,month)
+1.time(hour,min,am or pm) of the location in local time and date info
 2.icons weather data
 3.high and low temperature of weather data
 4.fine tune the error handling so that it handles all case gracefully
